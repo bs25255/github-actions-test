@@ -10,4 +10,17 @@ jobs:
       - name: Run multiline script
         run: |
             python3 --version
-            npm -v 
+            npm -v
+      - name: Run Python script
+        run: |
+            import os
+            print(os.getcwd())
+        shell: python
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Running Directory location
+        run: get-location
+      - name: Bash directry
+        run: pwd
+        shell: bash
