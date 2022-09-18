@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo command
-        run: eccho "Hello World "
+        run: echo "Hello World "
       - name: Run multiline script
         run: |
             python3 --version
