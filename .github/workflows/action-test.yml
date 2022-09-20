@@ -11,5 +11,4 @@ jobs:
         with:
           who-to-greet: baljeetsingh
       - name: Time printing actions
-        run: echo "${{steps.greet.output.time}}"
-        shell: bash 
+        run: echo "${{steps.greet.outputs.time}}"
