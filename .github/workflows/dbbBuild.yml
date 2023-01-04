@@ -10,7 +10,8 @@ env:
   DBB_Host: 'ssh baljeet@tvt6031.svl.ibm.com' # A valid SSH account on Z. With pre-generated and tested keys in the runner.
 
   # Pipeline scripts on z/OS (relative to the SSH user's Home Dir in USS)
-  Clone: 'All-pipeline-scripts/git-clone-ssh.sh' # Script to clone the code from GitHub to z/OS DBB_Build: 'All-pipeline-scripts/dbb-build.sh' # Script to perform the DBB build on z/OS
+  Clone: 'ghActions/All-pipeline-scripts/git-clone-ssh.sh' # Script to clone the code from GitHub to z/OS 
+  DBB_Build: 'ghActions/All-pipeline-scripts/dbb-build.sh' # Script to perform the DBB build on z/OS
 
 # "on" trigger to manually start this workflow. Can add "pull, push..." for auto trigger.
 # see https://docs.github.com/en/actions/learn-github-actions/contexts 
