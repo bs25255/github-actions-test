@@ -6,9 +6,9 @@ env:
   Zowe_RSE_ProfileName: 'tvt-RSE'              # Name of a valid RSE profile on the GitHub Actions (GHA) runner.
   Zowe_RSE_CommandWorkingDir: '/u/baljeet.singh'    # Current working directory - The Unix System Services (USS) directory from which to issue commands.
                                                     # This could be the RSE profile user's home directory. z/OS
-# Paths to pipeline scripts on z/OS (relative to the RSE profile user's Home Dir in USS)
-Clone: 'All-pipeline-scripts/git-clone-zowe-https.sh'      # Script to clone the code from GitHub to
-DBB_Build: 'All-pipeline-scripts/dbb-build.sh'        # Script to perform the DBB build on z/OS
+  # Paths to pipeline scripts on z/OS (relative to the RSE profile user's Home Dir in USS)
+  Clone: 'All-pipeline-scripts/git-clone-zowe-https.sh'      # Script to clone the code from GitHub to
+  DBB_Build: 'All-pipeline-scripts/dbb-build.sh'        # Script to perform the DBB build on z/OS
 
 # "on" trigger to manually start this workflow. Can add "pull, push..." for auto trigger.
 # see https://docs.github.com/en/actions/learn-github-actions/contexts 
